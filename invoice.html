@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        
+            body {
+                background-color: whitesmoke;
+            }
+    
+            fieldset {
+                width: 48%;
+            }
+            table,
+            th,
+            td {
+                border: 1px solid rgb(188, 143, 178);
+                border-collapse: collapse;
+                width: 18%;
+                background-color: rgba(255, 0, 140, 0.185);
+                color: rgb(248, 49, 172);
+                padding: 15px 30px 15px 30px;
+                text-align: center;
+                border-spacing: 0.1em;
+            }
+    
+            table th {
+                background-color: rgb(77, 38, 60);
+                color: rgb(218, 25, 99);
+                font-size: large;
+            }
+        </style>
+    </head>
+    <title> Invoice</title>
+
+    
+        <form>
+            <fieldset>
+              <legend>Invoice</legend>
+               <ul type="square">
+                <li> Food</li>
+                <ul type="disc">
+                    <li>Fruits</li>
+                       <ol type="1" start="3"><li> Bananas </li>
+                           <li> Apples </li>
+                        </ol>
+
+                    <li>Legumes</li>
+                      <ol type="i">
+                        <li> Tomatoes</li>
+                        <li>Carrots</li>
+
+                      </ol>
+                </ul>
+                <li type="sequence"> Drink</li>
+                <ol type="a"><li>Coffee</li>
+                    <li>Milk</li>
+                </ol>
+               </ul>
+              </fieldset>
+        
+
+        <br/>
+        <table id="t1" style="width:50%;">
+         <thead>
+            <tr>
+                <th colspan="7">Invoice</th>
+            </tr>
+            <tr>
+                <th colspan="5"> Food</th>
+                <th colspan="2"> Drink</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+                <td colspan="2" > Fruits</td>
+                <td colspan="2">Legumes</td>
+                <td rowspan="2">Coffe</td>
+                <td rowspan="2">2$</td>
+            </tr>
+            <tr>
+                <td>Names</td>
+                <td>Prices</td>
+                <td>Names</td>
+                <td>prices</td>
+            </tr>
+            <tr>
+                <td>Bananes</td>
+                <td>3$</td>
+                <td>Tomatoes</td>
+                <td>5$</td>
+                <td rowspan="2">Milk</td>
+                <td rowspan="2">3$</td>
+            </tr>
+            <tr>
+                <td>Apples</td>
+                <td>3$</td>
+                <td>Carrots</td>
+                <td>4$</td>
+            </tr>
+         </tbody>
+         <tfoot>
+            <tr>
+                <th colspan="5">Total Price</th>
+                <th>20$</th>
+            </tr>
+         </tfoot>
+        </body>
+</html>
